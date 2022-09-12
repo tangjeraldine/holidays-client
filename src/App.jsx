@@ -1,9 +1,12 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+// import { useState } from "react";
 import "./App.css";
 
+fetch("http://localhost:3000/")
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
     <div className='App'>
