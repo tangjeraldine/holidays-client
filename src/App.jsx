@@ -1,7 +1,7 @@
 // import { useState } from "react";
 import "./App.css";
 
-fetch("http://localhost:3000/")
+fetch("https://fair-pear-cricket-ring.cyclic.app/")
   .then((response) => response.json())
   .then((data) => console.log(data));
 
