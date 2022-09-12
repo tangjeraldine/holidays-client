@@ -1,7 +1,8 @@
 // import { useState } from "react";
 import "./App.css";
+const SERVER = import.meta.env.VITE_SERVER;
 
-fetch("https://fair-pear-cricket-ring.cyclic.app/")
+fetch(SERVER)
   .then((response) => response.json())
   .then((data) => console.log(data));
 
